@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ems.view.SalaryView">
+    <Label text="Salary Management" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <HBox spacing="10">
+        <Label text="Employee ID:" />
+        <TextField fx:id="employeeIdField" promptText="Enter Employee ID" />
+    </HBox>
+    <HBox spacing="10">
+        <Label text="Amount:" />
+        <TextField fx:id="amountField" promptText="Enter Salary Amount" />
+    </HBox>
+    <Button text="Add Salary" onAction="#onAddSalary" />
+    <TableView fx:id="salaryTable" prefHeight="300">
+        <columns>
+            <TableColumn text="ID" fx:id="idColumn" />
+            <TableColumn text="Amount" fx:id="amountColumn" />
+            <TableColumn text="Payment Date" fx:id="paymentDateColumn" />
+        </columns>
+    </TableView>
+</VBox>

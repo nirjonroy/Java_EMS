@@ -9,6 +9,6 @@
         <Label fx:id="welcomeLabel" layoutX="50" layoutY="20" text="HRM Dashboard" />
         <Button fx:id="employeeButton" layoutX="50" layoutY="80" onAction="#handleEmployeeButtonAction" text="Employees" />
         <Button fx:id="departmentButton" layoutX="50" layoutY="120" onAction="#handleDepartmentButtonAction" text="Departments" />
-        <Button fx:id="salaryButton" layoutX="50" layoutY="160" text="Salary" />
+        <Button fx:id="salaryButton" layoutX="50" layoutY="160" text="Salary" onAction="#handleSalaryButtonAction" />
     </children>
 </AnchorPane>
