@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="373.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ems.controller.DashboardController">
+    <children>
+        <Label fx:id="welcomeLabel" layoutX="50" layoutY="20" text="HRM Dashboard" />
+        <Button fx:id="employeeButton" layoutX="50" layoutY="80" onAction="#handleEmployeeButtonAction" text="Employees" />
+        <Button fx:id="departmentButton" layoutX="50" layoutY="120" onAction="#handleDepartmentButtonAction" text="Departments" />
+        <Button fx:id="salaryButton" layoutX="50" layoutY="160" text="Salary" />
+    </children>
+</AnchorPane>

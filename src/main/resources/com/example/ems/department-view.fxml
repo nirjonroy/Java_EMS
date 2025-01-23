@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ems.controller.DepartmentController">
+    <children>
+        <Label layoutX="50" layoutY="20" text="Department Management" />
+
+        <TableView fx:id="departmentTable" layoutX="50" layoutY="60" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" prefWidth="100" />
+                <TableColumn fx:id="colName" text="Department Name" prefWidth="300" />
+            </columns>
+        </TableView>
+
+        <TextField fx:id="nameField" layoutX="50" layoutY="300" promptText="Department Name" />
+        <Button text="Add" layoutX="50" layoutY="350" onAction="#addDepartment"/>
+        <Button text="Update" layoutX="110" layoutY="350" onAction="#updateDepartment"/>
+        <Button text="Delete" layoutX="180" layoutY="350" onAction="#deleteDepartment"/>
+        <Button text="Clear" layoutX="250" layoutY="350" onAction="#clearFields"/>
+    </children>
+</AnchorPane>
